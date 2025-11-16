@@ -36,7 +36,7 @@ RUN mvn dependency:go-offline -B
 
 # Agora, copia o resto do código-fonte, também da pasta correta.
 
-COPY code-with-quarkus/src ./src
+COPY subirrender/src ./src
 
 
 
