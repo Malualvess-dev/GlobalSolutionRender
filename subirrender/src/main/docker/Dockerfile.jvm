@@ -16,13 +16,13 @@ WORKDIR /app
 
 # especificando que eles estão dentro da pasta 'code-with-quarkus'.
 
-COPY code-with-quarkus/pom.xml .
+COPY subirrender/pom.xml .
 
-COPY code-with-quarkus/.mvn .mvn
+COPY subirrender/.mvn .mvn
 
-COPY code-with-quarkus/mvnw .
+COPY subirrender/mvnw .
 
-COPY code-with-quarkus/mvnw.cmd .
+COPY subirrender/mvnw.cmd .
 
 
 
