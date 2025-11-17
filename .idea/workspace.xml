@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d7bcd9d-52be-4944-85c1-258fd7811aa0" name="Changes" comment="" />
+    <list default="true" id="0d7bcd9d-52be-4944-85c1-258fd7811aa0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/subirrender/src/main/java/org/acme/Model/DTO/FuncionarioLoginDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subirrender/src/main/java/org/acme/Model/DTO/GerenteLoginDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subirrender/src/main/java/org/acme/Filter/CorsFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/subirrender/src/main/java/org/acme/Filter/CorsFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subirrender/src/main/java/org/acme/Repository/Cadastro_FuncionarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/subirrender/src/main/java/org/acme/Repository/Cadastro_FuncionarioRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subirrender/src/main/java/org/acme/Repository/Cadastro_GerenteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/subirrender/src/main/java/org/acme/Repository/Cadastro_GerenteRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subirrender/src/main/java/org/acme/Resource/Cadastro_FuncionarioResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/subirrender/src/main/java/org/acme/Resource/Cadastro_FuncionarioResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subirrender/src/main/java/org/acme/Service/Cadastro_FuncionarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/subirrender/src/main/java/org/acme/Service/Cadastro_FuncionarioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subirrender/src/main/java/org/acme/Service/Cadastro_GerenteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/subirrender/src/main/java/org/acme/Service/Cadastro_GerenteService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,23 +27,28 @@
       </list>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="35Ts3fMFjmAjdtX5hU9o62FsXkb" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Quarkus (Maven).Unnamed.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/malua/Downloads/subirrender"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Quarkus (Maven).Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/malua/Downloads/subirrender&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Unnamed" type="QuarkusMavenBridge">
       <option name="jreName" value="ms-21" />

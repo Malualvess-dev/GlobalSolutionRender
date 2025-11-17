@@ -52,4 +52,20 @@ public class Cadastro_FuncionarioService {
             throw new IllegalArgumentException("Senha incorreta");
         }
     }
+
+    //Login
+    public Cadastro_Funcionario loginFuncionario(String cpf, String senha) throws SQLException {
+
+        Cadastro_Funcionario f = cadastroFuncionarioRepository.buscarPorCPF(cpf);
+
+        if (f == null) {
+            return null; // CPF não existe
+        }
+
+        if (!f.getSenha().equals(senha)) {
+            return null; // senha incorreta
+        }
+
+        return f; // login OK
+    }
 }

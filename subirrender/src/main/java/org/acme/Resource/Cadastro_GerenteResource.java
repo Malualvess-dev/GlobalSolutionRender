@@ -80,5 +80,33 @@ public class Cadastro_GerenteResource {
         }
     }
 
+    // -----------------------------------
+    // LOGIN DO GERENTE
+    // -----------------------------------
+    @POST
+    @Path("/loginGerente")
+    public Response login(LoginRequest login) {
+
+        try {
+            Cadastro_Gerente g = cadastroGerenteService.loginGerente(login.cpf, login.senha);
+
+            if (g == null) {
+                return Response.status(Response.Status.UNAUTHORIZED)
+                        .entity("CPF ou senha inválidos!")
+                        .build();
+            }
+
+            return Response.ok("Bem vindo usuario").build();
+
+        } catch (SQLException e) {
+            return Response.serverError().entity("Erro: " + e.getMessage()).build();
+        }
+    }
+
+    // DTO interno
+    public static class LoginRequest {
+        public String cpf;
+        public String senha;
+    }
 
 }

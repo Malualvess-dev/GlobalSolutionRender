@@ -101,4 +101,35 @@ public class Cadastro_GerenteRepository {
         }
 
     }
+
+    // -----------------------------------------
+    // BUSCAR POR CPF (login)
+    // -----------------------------------------
+    public Cadastro_Gerente buscarPorCPF(String cpf) throws SQLException {
+
+        String sql = "SELECT * FROM Cadastro_Gerente WHERE cpf = ?";
+
+        try (Connection con = dataSource.getConnection();
+             PreparedStatement ps = con.prepareStatement(sql)) {
+
+            ps.setString(1, cpf);
+
+            try (ResultSet rs = ps.executeQuery()) {
+                if (rs.next()) {
+                    return new Cadastro_Gerente(
+                            rs.getInt(1),
+                            rs.getString(2),
+                            rs.getString(3),
+                            rs.getString(4),
+                            rs.getString(5),
+                            rs.getString(6),
+                            rs.getString(7),
+                            rs.getString(8)
+                    );
+                }
+            }
+        }
+
+        return null;
+    }
 }

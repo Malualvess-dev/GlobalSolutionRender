@@ -52,4 +52,15 @@ public class Cadastro_GerenteService {
             throw new IllegalArgumentException("Senha incorreta");
         }
     }
+
+    // LOGIN
+    public Cadastro_Gerente loginGerente(String cpf, String senha) throws SQLException {
+
+        Cadastro_Gerente g = cadastroGerenteRepository.buscarPorCPF(cpf);
+
+        if (g == null) return null;
+        if (!g.getSenha().equals(senha)) return null;
+
+        return g;
+    }
 }

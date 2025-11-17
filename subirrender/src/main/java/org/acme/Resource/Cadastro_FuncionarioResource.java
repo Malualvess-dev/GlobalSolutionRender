@@ -80,4 +80,33 @@ public class Cadastro_FuncionarioResource {
         }
     }
 
+    // -------------------------
+    //  Login Funcionario
+    // -------------------------
+    @POST
+    @Path("/loginFuncionario")
+    public Response login(LoginRequest login) {
+
+        try {
+            Cadastro_Funcionario f = cadastroFuncionarioService.loginFuncionario(login.cpf, login.senha);
+
+            if (f == null) {
+                return Response.status(Response.Status.UNAUTHORIZED)
+                        .entity("CPF ou senha inválidos!")
+                        .build();
+            }
+
+            return Response.ok("Bem vindo usuario").build();
+
+        } catch (SQLException e) {
+            return Response.serverError().entity("Erro: " + e.getMessage()).build();
+        }
+    }
+
+    // DTO interno para LOGIN
+    public static class LoginRequest {
+        public String cpf;
+        public String senha;
+    }
+
 }

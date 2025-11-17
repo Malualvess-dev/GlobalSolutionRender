@@ -105,4 +105,36 @@ public class Cadastro_FuncionarioRepository {
 
     }
 
+    //Buscar por cpf
+
+    public Cadastro_Funcionario buscarPorCPF(String cpf) throws SQLException {
+
+        String sql = "SELECT * FROM Cadastro_Funcionario WHERE cpf = ?";
+
+        try (Connection con = dataSource.getConnection();
+             PreparedStatement ps = con.prepareStatement(sql)) {
+
+            ps.setString(1, cpf);
+
+            ResultSet rs = ps.executeQuery();
+
+            if (rs.next()) {
+                return new Cadastro_Funcionario(
+                        rs.getInt(1),
+                        rs.getString(2),
+                        rs.getString(3),
+                        rs.getString(4),
+                        rs.getString(5),
+                        rs.getString(6),
+                        rs.getString(7),
+                        rs.getString(8),
+                        rs.getInt(9),
+                        rs.getInt(10)
+                );
+            }
+        }
+
+        return null;
+    }
+
 }
